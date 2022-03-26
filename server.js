@@ -29,7 +29,9 @@ app.use((req, res, next) => {
 });
 
 
-
+app.get('/', function (req, res) {
+    res.send('Api ruuning');
+ })
 
 app.listen(port, () => {
     console.log(`server is running at ${port}`);
